@@ -117,6 +117,18 @@ let targetLowerBound = 120
 let targetUpperBound = 150
 let currentHR = 147
 
+let isInTarget = currentHR > targetLowerBound && currentHR < targetUpperBound
+let isBelowTarget = currentHR < targetLowerBound
+let isAboveTarget = currentHR > targetUpperBound
+
+if isInTarget {
+  print("You're right on track!")
+} else if isBelowTarget {
+  print("You're doing great, but try to push it a bit")
+} else {
+  print("You're on fire! Slow it down just a bit.")
+}
+
 // Imagine you're on a baseball team nearing the end of the season. Create a leaguePosition constant with a value of 1. Using a switch statement, print "Champions!" if the leaguePosition is 1, "Runners up" if the value is 2, "Third place" if the value is 3, and "Bad season!" in all other cases.
 
 // Write a new switch statement that prints "Medal winner" if leaguePosition is within the range of 1-3. Otherwise, print "No medal awarded".
